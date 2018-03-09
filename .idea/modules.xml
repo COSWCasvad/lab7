@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\carlos.sanchez-v\Downloads\prueba\lab7\Calculator.iml" filepath="C:\Users\carlos.sanchez-v\Downloads\prueba\lab7\Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\carlos.sanchez-v\Downloads\lab7\app\app.iml" filepath="C:\Users\carlos.sanchez-v\Downloads\lab7\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab7.iml" filepath="$PROJECT_DIR$/lab7.iml" />
+      <module fileurl="file://C:\Users\carlos.sanchez-v\Downloads\lab7\lab7.iml" filepath="C:\Users\carlos.sanchez-v\Downloads\lab7\lab7.iml" />
     </modules>
   </component>
 </project>
