@@ -8,11 +8,16 @@ import java.util.Stack;
 
 public class CalculatorLogic {
 
-    public static double calculate(String text){
+    public static double calculate(String text) throws Exception {
         String[] lst = text.split("jump");
         for (int i = 0; i < lst.length; i++) {
             System.out.println("!!!!!!!!!!!!!!!!!!!!!! "+lst[i]);
         }
+        Stack<String> tks = new Stack<>();
+        tks.push("3");
+        tks.push("4");
+        tks.push("+");
+        System.out.println("Resolviendo ando"+ calculate(tks));
         return 0.0;
     }
 

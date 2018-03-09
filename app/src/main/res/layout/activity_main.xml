@@ -182,4 +182,50 @@
         android:onClick="onClickOperator"
         android:text="/" />
 
+    <Button
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/clearContent"
+        android:onClick="onClickPoint"
+        android:text="." />
+
+    <TextView
+        android:id="@+id/currentStackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/point"
+        android:text="Current Stack"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/stack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/currentStackText"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/addStack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b0"
+        android:layout_toEndOf="@+id/point"
+        android:layout_toRightOf="@+id/point"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="onClickAddToStack"
+        android:text="Add to stack"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/holo_blue_light" />
+
 </RelativeLayout>

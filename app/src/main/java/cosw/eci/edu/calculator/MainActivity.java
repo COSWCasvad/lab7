@@ -6,24 +6,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Stack;
+
 import cosw.eci.edu.calculator.model.CalculatorLogic;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView tv;
+    private TextView stackTv;
     private String currentText;
-    private String logicalText;
+    private Stack<String> stack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         currentText = "";
-        logicalText="";
+        Stack<String> stack=new Stack<>();
         setContentView(R.layout.activity_main);
         init();
     }
 
     protected void init(){
+
         tv = (TextView) findViewById(R.id.textView);
+        stackTv = (TextView) findViewById(R.id.stack);
     }
 
 
@@ -35,28 +40,32 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onClickNumber(View v){
         Button pressed = (Button) v;
-        logicalText += pressed.getText().toString();
+
         setText(currentText + pressed.getText().toString());
 
     }
 
     protected void onClickOperator(View v){
         Button pressed = (Button) v;
-        logicalText += "jump"+pressed.getText().toString()+"jump";
+
         setText(currentText + pressed.getText().toString());
     }
 
     protected void onClickCleanTextView(View v){
-        logicalText = "";
+
         setText("");
     }
 
     protected void onClickEquals(View v){
-        try{
-            setText(CalculatorLogic.calculate(logicalText)+"");
-        }catch(Exception e){
-            setText("");
-        }
+
+            //setText(CalculatorLogic.calculate(logicalText)+"");
+
+    }
+    protected void onClickAddToStack(View v){
+
+    }
+
+    protected void onClickPoint(View v){
 
     }
 }
